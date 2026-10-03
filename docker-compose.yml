@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:16
+    container_name: taller_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: taller_admin
+      POSTGRES_PASSWORD: taller123
+      POSTGRES_DB: taller_mecanico
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
