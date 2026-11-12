@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{base}}/auth/perfil"
+method: GET
+headers:
+  Content-Type: application/json
+order: 3000

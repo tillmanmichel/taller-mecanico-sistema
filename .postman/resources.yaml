@@ -1,0 +1,8 @@
+# Use this workspace to collaborate
+workspace:
+  id: 0c7761f7-fe8b-4f38-83fe-02e95cca63f5
+
+localResources:
+  collections:
+    - ../Taller Mecánico API
+    - ../backend/Taller Mecánico API

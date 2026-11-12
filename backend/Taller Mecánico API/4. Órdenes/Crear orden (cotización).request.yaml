@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{base}}/ordenes"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "vehiculoId": 1,
+      "descripcionFalla": "Ruido al frenar",
+      "costoEstimado": 1850.5
+    }
+order: 1000

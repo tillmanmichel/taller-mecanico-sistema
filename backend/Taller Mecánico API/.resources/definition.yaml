@@ -1,0 +1,11 @@
+$kind: collection
+description: ""
+variables:
+  base: http://localhost:3000
+  token: ""
+auth:
+  - id: ff4270b3-79ee-4141-b620-33ff4b70a9fe
+    type: bearer
+    name: bearer auth
+    credentials:
+      token: "{{token}}"

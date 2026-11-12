@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{base}}/ordenes/1/estado"
+method: PATCH
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "estado": "entregada",
+      "totalFinal": 1900
+    }
+order: 2000

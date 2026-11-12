@@ -1,0 +1,11 @@
+body { background: #f4f6f9; }
+.sidebar { width: 220px; min-height: 100vh; background: #1f3864; }
+.sidebar .nav-link { color: #cfd8e8; border-radius: .4rem; }
+.sidebar .nav-link.active, .sidebar .nav-link:hover { background: #2e5597; color: #fff; }
+.card { border: none; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+.solo-impresion { display: none; }
+@media print {
+  .no-imprimir { display: none !important; }
+  .solo-impresion { display: block; }
+  body { background: #fff; }
+}

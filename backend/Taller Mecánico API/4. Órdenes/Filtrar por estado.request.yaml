@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{base}}/ordenes?estado=entregada"
+method: GET
+headers:
+  Content-Type: application/json
+queryParams:
+  estado: entregada
+order: 8000

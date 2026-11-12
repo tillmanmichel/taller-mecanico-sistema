@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{base}}/ordenes/1"
+method: PATCH
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "diagnostico": "Balatas gastadas",
+      "costoRefacciones": 620.25,
+      "detalleRefacciones": "Juego de balatas delanteras"
+    }
+order: 4000

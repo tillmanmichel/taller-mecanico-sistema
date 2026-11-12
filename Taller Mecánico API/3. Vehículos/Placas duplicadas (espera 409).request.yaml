@@ -1,0 +1,16 @@
+$kind: http-request
+url: "{{base}}/vehiculos"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "clienteId": 1,
+      "marca": "Ford",
+      "modelo": "Fiesta",
+      "anio": 2015,
+      "placas": "ABC-123-X"
+    }
+order: 2000

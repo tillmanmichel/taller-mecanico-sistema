@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{base}}/clientes/1"
+method: PATCH
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "telefono": "614 000 1111"
+    }
+order: 6000

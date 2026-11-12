@@ -1,0 +1,15 @@
+# Solo si NO tienes ya el contenedor taller_postgres. Levántalo con: docker compose up -d
+services:
+  postgres:
+    image: postgres:16
+    container_name: taller_postgres
+    environment:
+      POSTGRES_USER: taller_admin
+      POSTGRES_PASSWORD: taller123
+      POSTGRES_DB: taller_mecanico
+    ports:
+      - "5432:5432"
+    volumes:
+      - taller_data:/var/lib/postgresql/data
+volumes:
+  taller_data:
